@@ -9,7 +9,15 @@
         android:id="@+id/navigation_home"
         android:name="com.application.kpti.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_detailpropertyFragment"
+            app:destination="@id/detailpropertyFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_locationFragment"
+            app:enterAnim="@anim/location_bottom_to_original"
+            app:destination="@id/locationFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -29,15 +37,98 @@
         tools:layout="@layout/splashscreen_fragment" >
         <action
             android:id="@+id/action_splashscreenFragment_to_navigation_home"
+            app:enterAnim="@anim/splash_fade_in"
             app:destination="@id/navigation_home" />
         <action
             android:id="@+id/action_splashscreenFragment_to_loginFragment"
+            app:popUpTo="@id/splashscreenFragment"
+            app:popUpToInclusive="true"
             app:enterAnim="@anim/splash_fade_in"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashscreenFragment_to_detailpropertyFragment"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/detailpropertyFragment" />
+        <action
+            android:id="@+id/action_splashscreenFragment_to_locationFragment"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/locationFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.application.kpti.ui.login.LoginFragment"
         android:label="login_fragment"
-        tools:layout="@layout/login_fragment" />
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.application.kpti.ui.register.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_emailConfirFragment"
+            app:popUpTo="@id/emailConfirFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/emailConfirFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailConfirFragment"
+        android:name="com.application.kpti.ui.emailconfir.EmailConfirFragment"
+        android:label="fragment_email_confir"
+        tools:layout="@layout/fragment_email_confir" />
+    <fragment
+        android:id="@+id/detailpropertyFragment"
+        android:name="com.application.kpti.ui.detailproperty.DetailpropertyFragment"
+        android:label="detailproperty_fragment"
+        tools:layout="@layout/detailproperty_fragment" >
+        <action
+            android:id="@+id/action_detailpropertyFragment_to_navigation_home"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_detailpropertyFragment_to_mapsFragment"
+            app:enterAnim="@anim/splash_fade_in"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.application.kpti.ui.location.LocationFragment"
+        android:label="location_fragment"
+        tools:layout="@layout/location_fragment" >
+        <action
+            android:id="@+id/action_locationFragment_to_navigation_home"
+            app:enterAnim="@anim/splash_fade_in"
+            app:popUpTo="@id/locationFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.application.kpti.ui.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_detailpropertyFragment"
+            app:enterAnim="@anim/splash_fade_in"
+            app:popUpTo="@id/mapsFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/detailpropertyFragment" />
+    </fragment>
 </navigation>

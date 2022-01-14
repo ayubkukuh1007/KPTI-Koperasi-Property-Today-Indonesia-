@@ -8,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.application.kpti.MainActivity
 import com.application.kpti.R
 import com.application.kpti.databinding.SplashscreenFragmentBinding
 
@@ -47,16 +49,19 @@ class SplashscreenFragment : Fragment() {
         binding.splashLine2.startAnimation(animTransaltexr)
 
         binding.btnGetstarted.setOnClickListener {
+            //checked permissions
             findNavController().navigate(R.id.action_splashscreenFragment_to_loginFragment)
+            //findNavController().navigate(R.id.action_splashscreenFragment_to_locationFragment)
+            //findNavController().navigate(R.id.action_splashscreenFragment_to_detailpropertyFragment)
         }
         return view
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(SplashscreenViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+//    override fun onActivityCreated(savedInstanceState: Bundle?) {
+//        super.onActivityCreated(savedInstanceState)
+//        viewModel = ViewModelProvider(this).get(SplashscreenViewModel::class.java)
+//        // TODO: Use the ViewModel
+//    }
 
     override fun onDestroyView() {
         super.onDestroyView()

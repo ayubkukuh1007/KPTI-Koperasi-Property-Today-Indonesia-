@@ -6,9 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.application.kpti.R
+import com.application.kpti.databinding.LoginFragmentBinding
 
 class LoginFragment : Fragment() {
+
+    private var _binding: LoginFragmentBinding? = null
+    private val binding get() = _binding!!
 
     companion object {
         fun newInstance() = LoginFragment()
@@ -20,7 +25,18 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.login_fragment, container, false)
+        _binding = LoginFragmentBinding.inflate(inflater, container, false)
+        val view = binding.root
+
+        binding.register.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
+
+        binding.btnLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_navigation_home)
+        }
+
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

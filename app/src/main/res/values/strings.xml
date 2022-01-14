@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">KPTI</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -19,4 +19,19 @@
     <string name="login_text_dont_have_account">Don\'t Have an Account?</string>
     <string name="login_register">Register</string>
     <string name="property">property</string>
+    <string name="register_dec_logo">logo</string>
+    <string name="register_form_register">Form Register</string>
+    <string name="register_nama">Nama</string>
+    <string name="register_email">Email</string>
+    <string name="register_nohp">No. Handphone</string>
+    <string name="register_password">Password</string>
+    <string name="register_confir_password">Konfirmasi Password</string>
+    <string name="register_submit">SUBMIT</string>
+    <string name="email_label_confirm_1">Thanks for registering with us</string>
+    <string name="email_confirm_label_2">in order to active your account please check your email</string>
+    <string name="email_active_account">ACTIVE YOUR ACCOUNT</string>
+    <string name="email_dec_img_confirm">check confirm</string>
+    <string name="email_dec_img_message">check message</string>
+    <string name="email_dec_smile_face">smile face</string>
+    <string name="register_login">Login</string>
 </resources>

@@ -21,7 +21,6 @@
         android:id="@+id/splash_line_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@id/logo"
         app:layout_constraintLeft_toRightOf="@+id/logo"
@@ -66,6 +65,7 @@
             android:layout_height="wrap_content"
             android:text="@string/splash_label_3"
             android:textSize="16sp"
+            android:fontFamily="@font/poppins_light"
             android:textStyle="bold" />
 
         <TextView
@@ -73,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_light"
             android:text="@string/splash_label_4"
             android:textSize="16sp"
             android:textStyle="bold" />
