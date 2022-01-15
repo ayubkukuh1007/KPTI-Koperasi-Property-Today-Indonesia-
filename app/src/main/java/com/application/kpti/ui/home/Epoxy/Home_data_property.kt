@@ -11,14 +11,16 @@ data class HomeProperty(
 data class PropertyPopuler(
     val id : Long,
     val img_property: String,
-    val property_name: String
+    val property_name: String,
+    val isFavorite : Boolean
 )
 
 data class PropertySekitar(
     val id : Long,
     val distance: String,
     val img_property: String,
-    val property_name: String
+    val property_name: String,
+    val isFavorite: Boolean
 )
 
 data class PropertyTerkini(
@@ -26,5 +28,6 @@ data class PropertyTerkini(
     val img_property: String,
     val location: String,
     val price: String,
-    val property_name: String
+    val property_name: String,
+    val isFavorite: Boolean
 )

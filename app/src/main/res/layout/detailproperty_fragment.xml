@@ -175,9 +175,13 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvphotos"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/detail_item_property_horizontal"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintStart_toStartOf="@+id/label_photos"
                 app:layout_constraintTop_toBottomOf="@+id/label_photos" />
 
