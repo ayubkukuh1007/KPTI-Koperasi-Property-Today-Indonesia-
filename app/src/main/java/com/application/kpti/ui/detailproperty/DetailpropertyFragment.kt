@@ -21,6 +21,8 @@ import com.application.kpti.ui.location.adapter.LocationRecentlyListAdapter
 import com.application.kpti.ui.location.model.Filter_Location
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.gson.Gson
+import com.squareup.moshi.JsonAdapter
+import com.squareup.moshi.Moshi
 
 class DetailpropertyFragment : Fragment(),LocationListDetailPropertyAdapter.OnItemClickListener{
 
@@ -62,8 +64,12 @@ class DetailpropertyFragment : Fragment(),LocationListDetailPropertyAdapter.OnIt
         _binding = DetailpropertyFragmentBinding.inflate(inflater, container, false)
         val view = binding.root
         val bottomSheet = binding.detailBottomsheet
-        val gson = Gson().fromJson<ListDataProperty>(jsonData, ListDataProperty::class.java)
-        locationListDetailPropertyAdapter = LocationListDetailPropertyAdapter(context = requireContext(),dataDetailProperties = gson.data,onItemClickListener = this)
+        //val gson = Gson().fromJson<ListDataProperty>(jsonData, ListDataProperty::class.java)
+        val moshi: Moshi = Moshi.Builder().build()
+        val jsonAdapter: JsonAdapter<ListDataProperty> = moshi.adapter(ListDataProperty::class.java)
+        val detailproperty = jsonAdapter.fromJson(jsonData)
+
+        locationListDetailPropertyAdapter = LocationListDetailPropertyAdapter(context = requireContext(),dataDetailProperties = detailproperty!!.data,onItemClickListener = this)
         binding.rvphotos.adapter = locationListDetailPropertyAdapter
         binding.rvphotos.layoutManager = LinearLayoutManager(requireContext(),
             RecyclerView.HORIZONTAL, false)

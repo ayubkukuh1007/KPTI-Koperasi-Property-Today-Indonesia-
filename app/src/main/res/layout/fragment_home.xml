@@ -17,11 +17,12 @@
         android:drawableStart="@drawable/icon_location_top"
         android:drawablePadding="5dp"
         android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:minHeight="48dp"
+        android:padding="10dp"
         android:scrollHorizontally="true"
         android:singleLine="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:padding="10dp"
-        android:text="Sleman, D.I. Yogyakarta"
+        android:text="@string/home_indonesia"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/user_avatar"
         app:layout_constraintEnd_toStartOf="@+id/user_avatar"
@@ -34,6 +35,10 @@
         android:layout_height="32dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/user_circle_icon"
+        android:padding="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintBottom_toBottomOf="@id/location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/location" />
@@ -44,12 +49,43 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:text="@string/home_recomendation_label"
         android:textColor="@color/black"
-        android:fontFamily="@font/poppins_light"
-        android:text="Rekomendasi properti pilihan hari ini"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location" />
+
+<!--    <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--        android:id="@+id/shimmerlayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/label_properti_hari_ini">-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <include layout="@layout/home_item_property_populer_horizontal_shimmer" />-->
+
+<!--            <include layout="@layout/home_item_property_populer_horizontal_shimmer" />-->
+
+<!--            <include layout="@layout/home_item_property_populer_horizontal_shimmer" />-->
+
+<!--            <include layout="@layout/home_item_property_populer_horizontal_shimmer" />-->
+
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--    </com.facebook.shimmer.ShimmerFrameLayout>-->
 
     <com.airbnb.epoxy.EpoxyRecyclerView
         android:id="@+id/rv_home"
@@ -64,6 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_properti_hari_ini" />
+        app:layout_constraintTop_toBottomOf="@+id/label_properti_hari_ini"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

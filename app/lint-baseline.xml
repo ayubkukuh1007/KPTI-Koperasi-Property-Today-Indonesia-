@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.1.0-rc01" type="baseline" client="gradle" dependencies="false" name="AGP (7.1.0-rc01)" variant="fatal" version="7.1.0-rc01">
+
+    <issue
+        id="NotSibling"
+        message="`@+id/populer_nama_property` is not a sibling in the same `ConstraintLayout`"
+        errorLine1="            app:layout_constraintBottom_toTopOf=&quot;@+id/populer_nama_property&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/detail_item_property_horizontal.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+</issues>

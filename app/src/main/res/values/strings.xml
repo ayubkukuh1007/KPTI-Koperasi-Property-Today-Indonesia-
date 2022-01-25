@@ -34,4 +34,8 @@
     <string name="email_dec_img_message">check message</string>
     <string name="email_dec_smile_face">smile face</string>
     <string name="register_login">Login</string>
+    <string name="home_indonesia">Indonesia</string>
+    <string name="home_recomendation_label">Rekomendasi properti pilihan hari ini</string>
+    <string name="profil_profilimge">profil image</string>
+    <string name="info_property">info property</string>
 </resources>

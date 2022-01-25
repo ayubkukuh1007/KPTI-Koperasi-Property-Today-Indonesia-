@@ -23,6 +23,12 @@
         <item name="colorControlHighlight">@color/black</item>
     </style>
 
+    <style name="AppearanceTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="ThemeOverlay.AppTheme.TextInputEditText.Outlined" parent="">
         <item name="colorPrimary">@color/black</item>
     </style>

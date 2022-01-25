@@ -1,16 +1,12 @@
 package com.application.kpti.ui.home.Epoxy
 
-import android.content.Context
 import android.view.View
-import android.view.ViewParent
-import android.widget.TextView
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyHolder
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.application.kpti.R
 import com.application.kpti.databinding.HomeItemPropertyPopulerHorizontalBinding
-import com.application.kpti.databinding.HomeItemTitlePropertyPopulerBinding
 import com.bumptech.glide.Glide
 
 

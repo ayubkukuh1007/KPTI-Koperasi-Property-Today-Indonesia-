@@ -21,7 +21,6 @@
             android:layout_width="110dp"
             android:layout_height="88dp"
             android:layout_marginBottom="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/populer_nama_property"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

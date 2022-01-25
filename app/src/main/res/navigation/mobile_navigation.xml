@@ -17,6 +17,9 @@
             android:id="@+id/action_navigation_home_to_locationFragment"
             app:enterAnim="@anim/location_bottom_to_original"
             app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_profilFragment"
+            app:destination="@id/profilFragment" />
     </fragment>
 
     <fragment
@@ -131,4 +134,9 @@
             app:popUpToInclusive="true"
             app:destination="@id/detailpropertyFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.application.kpti.ui.profil.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
 </navigation>

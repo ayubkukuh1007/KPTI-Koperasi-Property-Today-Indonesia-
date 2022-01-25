@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="1dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_profile"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/info_img_propery"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/info_property"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Senin, 18 januari 2022"
+        android:textColor="@color/color8"
+        app:layout_constraintStart_toEndOf="@+id/info_img_propery"
+        app:layout_constraintTop_toTopOf="@+id/info_img_propery" />
+
+    <TextView
+        android:id="@+id/info_dec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Kiat berbisnis Property di Era Pandemi"
+        android:textColor="@color/color_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/info_img_propery"
+        app:layout_constraintTop_toBottomOf="@+id/info_date" />
+
+    <TextView
+        android:id="@+id/info_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Selengkapnya >>"
+        android:textColor="@color/color_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_dec" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
