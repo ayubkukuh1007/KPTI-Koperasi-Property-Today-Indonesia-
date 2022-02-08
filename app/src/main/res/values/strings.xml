@@ -38,4 +38,7 @@
     <string name="home_recomendation_label">Rekomendasi properti pilihan hari ini</string>
     <string name="profil_profilimge">profil image</string>
     <string name="info_property">info property</string>
+    <string name="profil_agen">Agen</string>
+    <string name="profil_property">Property</string>
+    <string name="profil_62">+62</string>
 </resources>

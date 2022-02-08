@@ -3,9 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable-v24/constraint_setting_field_radius_setting.xml" value="0.154" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/arrow_right.xml" value="0.1" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/btn_back.xml" value="0.1" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/btn_favorite.xml" value="0.2605" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/constraint_radius_d_property.xml" value="0.1" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/constraint_radius_setting.xml" value="0.2605" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/constraint_setting_field_radius_setting.xml" value="0.1615" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/profil_item_radius_setting.xml" value="0.2655" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/profil_number_left_item_radius_setting.xml" value="0.2655" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/profil_number_right_item_radius_setting.xml" value="0.2655" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/profil_tab_textappearance.xml" value="0.1835" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/ripple_btn_whatsapp.xml" value="0.1" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/rounded_corner.xml" value="0.1" />
@@ -15,11 +22,11 @@
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/rounded_whatsapp_detailp.xml" value="0.1" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/drawable/tab_color_selector.xml" value="0.1" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/detail_item_property_horizontal.xml" value="0.1" />
-        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/fragment_favorite.xml" value="0.1" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/fragment_favorite.xml" value="0.16203703703703703" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/fragment_home.xml" value="0.176" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/fragment_info.xml" value="0.259375" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/fragment_profil.xml" value="0.264" />
-        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/home_item_property_populer_horizontal.xml" value="0.1" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/home_item_property_populer_horizontal_shimmer.xml" value="0.1" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/home_item_property_sekitar_vertical.xml" value="0.1" />
@@ -30,7 +37,9 @@
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/item_shimmer_property_sekitar.xml" value="0.264" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/item_shimmer_property_terkini.xml" value="0.264" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/login_fragment.xml" value="0.264" />
-        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/profile_info_item.xml" value="0.4" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/profil_setting_item.xml" value="0.2" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/profile_favorite_item.xml" value="0.1" />
+        <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/profile_info_item.xml" value="0.22697368421052633" />
         <entry key="..\:/SHARE_CODE/Android_Kotlin_Fundamental/KPTI-Koperasi-Property-Today-Indonesia-/app/src/main/res/layout/register_fragment.xml" value="0.26037735849056604" />
       </map>
     </option>

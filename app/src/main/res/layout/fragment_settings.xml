@@ -1,10 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.profil.pages.SettingsFragment">
+    android:padding="5dp"
+    android:layout_height="wrap_content">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/constraint_radius_setting"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/setting_agen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/profil_agen"
+            android:inputType="text"
+            android:padding="5dp"
+            android:background="@drawable/constraint_setting_field_radius_setting"
+            app:layout_constraintEnd_toStartOf="@+id/setting_property"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/setting_property"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/constraint_setting_field_radius_setting"
+            android:hint="@string/profil_property"
+            android:inputType="text"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/setting_agen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/setting_agen"
+            app:layout_constraintTop_toTopOf="@+id/setting_agen" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/setting_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/constraint_setting_field_radius_setting"
+            android:hint="@string/profil_property"
+            android:inputType="text"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/setting_property"
+            app:layout_constraintStart_toStartOf="@+id/setting_agen"
+            app:layout_constraintTop_toBottomOf="@+id/setting_agen" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/setting_62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/profil_number_left_item_radius_setting"
+            android:padding="5dp"
+            android:text="@string/profil_62"
+            app:layout_constraintStart_toStartOf="@+id/setting_email"
+            app:layout_constraintTop_toBottomOf="@+id/setting_email" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/setting_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profil_number_right_item_radius_setting"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/setting_62"
+            app:layout_constraintEnd_toEndOf="@+id/setting_email"
+            app:layout_constraintStart_toEndOf="@+id/setting_62"
+            app:layout_constraintTop_toTopOf="@+id/setting_62" />
+
+<!--        <View-->
+<!--            android:id="@+id/view2"-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:background="@color/black"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/setting_62"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/setting_62"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/setting_62" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corner_login"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/setting_phone"
+            app:layout_constraintTop_toBottomOf="@+id/setting_phone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
