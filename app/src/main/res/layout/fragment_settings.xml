@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@drawable/constraint_setting_field_radius_setting"
-            android:hint="@string/profil_property"
+            android:hint="@string/settiing_profile_e_mail"
             android:inputType="text"
             android:padding="5dp"
             app:layout_constraintEnd_toEndOf="@+id/setting_property"
@@ -81,7 +81,6 @@
             app:layout_constraintEnd_toEndOf="@+id/setting_email"
             app:layout_constraintStart_toEndOf="@+id/setting_62"
             app:layout_constraintTop_toTopOf="@+id/setting_62" />
-
 <!--        <View-->
 <!--            android:id="@+id/view2"-->
 <!--            android:layout_width="1dp"-->
@@ -92,6 +91,7 @@
 <!--            app:layout_constraintTop_toTopOf="@+id/setting_62" />-->
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setting_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

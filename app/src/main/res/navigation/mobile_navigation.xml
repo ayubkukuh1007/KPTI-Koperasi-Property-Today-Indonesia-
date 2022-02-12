@@ -139,4 +139,8 @@
         android:name="com.application.kpti.ui.profil.ProfilFragment"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.application.kpti.ui.profil.pages.setting.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>

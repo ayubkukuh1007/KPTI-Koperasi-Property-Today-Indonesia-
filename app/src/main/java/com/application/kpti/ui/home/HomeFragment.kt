@@ -15,6 +15,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.application.kpti.R
@@ -22,6 +23,7 @@ import com.application.kpti.databinding.FragmentHomeBinding
 import com.application.kpti.ui.home.Epoxy.HomeController
 import com.application.kpti.ui.home.Epoxy.HomeProperty
 import com.application.kpti.ui.home.Epoxy.PropertyPopuler
+import com.application.kpti.ui.home.viewmodel.HomeViewModel
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
@@ -37,14 +39,14 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
 import okhttp3.Dispatcher
 
-//@AndroidEntryPoint
+@AndroidEntryPoint
 class HomeFragment : Fragment(),HomeController.homeOnItemclickListener {
 
     //get current location
     private lateinit var fusedLocationClient : FusedLocationProviderClient
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-
+    val viewmodel : HomeViewModel by activityViewModels()
     val jsonData = "{\n" +
             "  \"init_location\": \"Sleman, D.I Yogyakarta\",\n" +
             "  \"img_user\": \"link_img_user\",\n" +

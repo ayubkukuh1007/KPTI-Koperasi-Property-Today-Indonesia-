@@ -54,7 +54,6 @@ class DetailpropertyFragment : Fragment(),LocationListDetailPropertyAdapter.OnIt
 
     private var _binding: DetailpropertyFragmentBinding? = null
     private val binding get() = _binding!!
-    private lateinit var viewModel: DetailpropertyViewModel
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<FrameLayout>
 
     override fun onCreateView(
@@ -96,11 +95,4 @@ class DetailpropertyFragment : Fragment(),LocationListDetailPropertyAdapter.OnIt
     override fun onItemDetailPropertyClick(listdataproperty: Data) {
         Toast.makeText(context, listdataproperty.id, Toast.LENGTH_SHORT).show()
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(DetailpropertyViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
 }
